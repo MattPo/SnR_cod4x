@@ -204,15 +204,15 @@ onStartGameType()
 	allowed[2] = "blocker";
 	maps\mp\gametypes\_gameobjects::main(allowed);
 	
-	maps\mp\gametypes\_rank::registerScoreInfo( "win", 2 * level.dvar[ "xp_multi" ] );
-	maps\mp\gametypes\_rank::registerScoreInfo( "loss", 1 * level.dvar[ "xp_multi" ] );
-	maps\mp\gametypes\_rank::registerScoreInfo( "tie", 1.5 * level.dvar[ "xp_multi" ] );
+	maps\mp\gametypes\_rank::registerScoreInfo( "win", 2 );
+	maps\mp\gametypes\_rank::registerScoreInfo( "loss", 1 );
+	maps\mp\gametypes\_rank::registerScoreInfo( "tie", 1.5 );
 	
-	maps\mp\gametypes\_rank::registerScoreInfo( "kill", 5 * level.dvar[ "xp_multi" ] );
-	maps\mp\gametypes\_rank::registerScoreInfo( "headshot", 5 * level.dvar[ "xp_multi" ] );
-	maps\mp\gametypes\_rank::registerScoreInfo( "assist", 2 * level.dvar[ "xp_multi" ] );
-	maps\mp\gametypes\_rank::registerScoreInfo( "plant", 10 * level.dvar[ "xp_multi" ] );
-	maps\mp\gametypes\_rank::registerScoreInfo( "defuse", 10 * level.dvar[ "xp_multi" ] );
+	maps\mp\gametypes\_rank::registerScoreInfo( "kill", 5 );
+	maps\mp\gametypes\_rank::registerScoreInfo( "headshot", 5 );
+	maps\mp\gametypes\_rank::registerScoreInfo( "assist", 2 );
+	maps\mp\gametypes\_rank::registerScoreInfo( "plant", 10 );
+	maps\mp\gametypes\_rank::registerScoreInfo( "defuse", 10 );
 	
 	thread updateGametypeDvars();
 	
